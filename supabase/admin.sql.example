@@ -1,0 +1,6 @@
+-- 在 Supabase SQL Editor 內操作；不要把真正密碼存入 Git。
+-- 建立門市（請使用至少 16 字元隨機密碼，使用密碼管理器保存）
+insert into public.stores(name,password_hash)
+values ('你的門市', extensions.crypt('在此替換為門市密碼',extensions.gen_salt('bf',12))) returning id,name;
+-- 更換密碼，讓所有舊裝置登入失效；替換 UUID 與密碼後執行
+-- update public.stores set password_hash=extensions.crypt('新的隨機密碼',extensions.gen_salt('bf',12)),epoch=epoch+1 where id='你的門市UUID';
