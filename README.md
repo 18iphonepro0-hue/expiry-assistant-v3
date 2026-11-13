@@ -1,6 +1,6 @@
 # 即期品下架助手 V3｜門市多人共用版
 
-實作狀態：已連接正式 Supabase 專案，匿名登入及未授權存取防護已實測通過。尚待 GitHub Pages 啟用與持有門市密碼的使用者驗收登入、新增及跨裝置同步。公開連線設定位於 src/store-config.js，只含 publishable key；不含門市密碼或管理金鑰。
+實作狀態：已連接正式 Supabase 專案，匿名登入及未授權存取防護已實測通過。GitHub Pages 已發布，正式網址：https://18iphonepro0-hue.github.io/expiry-assistant-v3/ 。持有門市密碼的使用者仍需驗收正確登入、新增及跨裝置同步。公開連線設定位於 src/store-config.js，只含 publishable key；不含門市密碼或管理金鑰。
 
 ## 同事操作說明（上線後可直接轉傳）
 
